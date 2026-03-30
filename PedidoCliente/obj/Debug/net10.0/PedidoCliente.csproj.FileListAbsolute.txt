@@ -1,0 +1,15 @@
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\bin\Debug\net10.0\PedidoCliente.exe
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\bin\Debug\net10.0\PedidoCliente.deps.json
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\bin\Debug\net10.0\PedidoCliente.runtimeconfig.json
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\bin\Debug\net10.0\PedidoCliente.dll
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\bin\Debug\net10.0\PedidoCliente.pdb
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.GeneratedMSBuildEditorConfig.editorconfig
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.AssemblyInfoInputs.cache
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.AssemblyInfo.cs
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.csproj.CoreCompileInputs.cache
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.sourcelink.json
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.dll
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\refint\PedidoCliente.dll
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.pdb
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\PedidoCliente.genruntimeconfig.cache
+D:\AUGUSTO\Ing. sistemas computacionales\ciclo_III\Fundamentos_programacion\semana_1\Laboratorio_1_grupal\GRUPO-04-FUNDAMENTOS-PROGRAMACION\PedidoCliente\obj\Debug\net10.0\ref\PedidoCliente.dll
