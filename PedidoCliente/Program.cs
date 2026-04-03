@@ -50,7 +50,7 @@ class Program
                 }
                 else
                 {
-                    nombreValido = true; s
+                    nombreValido = true;
                 }
             }
         }
