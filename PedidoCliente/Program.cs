@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 class Program
 {
+    static List<String> productoSeleccionado = new List<string>();
+    static List<int> Cantidad = new List<int>();
+    static List<double> Precio = new List<double>();
     static void Main()
     {
         IngresoDatos();
@@ -18,9 +22,7 @@ class Program
         int seleccionCategoria = 0;
         int seleccionProducto = 0;
         bool productoValido = false;
-        List<String> productoSeleccionado = new List<string>();
-        List<int> Cantidad = new List<int>();
-        List<double> Precio = new List<double>();
+
         Dictionary<int, List<string>> Productos = new Dictionary<int, List<string>>()
         {
             { 1, new List<string> { "Arroz", "Aceite", "Azúcar", "Fideos", "Lentejas" }},
@@ -129,20 +131,21 @@ class Program
 
     //JEAN 
 
-
     static void Calculo() //se realisa el calculo de los productos//
     {
         double total = 0;
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < Cantidad.Count; i++)
         {
-            Console.WriteLine("Producto " + (i + 1));
-            int cantidad = LeerEntero("Ingrese la cantidad del producto:");
-            double precio = LeerDecimal("Ingrese el precio del producto");
-            double subtotal = cantidad * precio;
+            Console.WriteLine("---Calculando producto: " + productoSeleccionado[i] + "---");
+            int cantidadActual = Cantidad[i];
+            double precioActual = Precio[i];
+            double subtotal = cantidadActual * precioActual;
             total += subtotal;
             Console.WriteLine("Subtotal:" + subtotal);
         }
-        Console.WriteLine("Total:" + total);
+        Console.WriteLine("/==============================");
+        Console.WriteLine("TOTAL A PAGAR:" + total);
+        Console.WriteLine("/==============================");
     }
     static int LeerEntero(string mensaje)//se solicita que el usuario ingrese un numero entero valido para la cantidad//
     {
