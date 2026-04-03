@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 class Program
 {
     static List<String> productoSeleccionado = new List<string>();
@@ -8,7 +9,7 @@ class Program
     static void Main()
     {
         IngresoDatos();
-        Calculo();
+        ImpresionResultados();
 
     }
 
@@ -45,7 +46,7 @@ class Program
             {   //Se valida que el nombre no tenga números, sino, vuelve a solicitar el nombre al usuario
                 if (nombreCliente.Any(char.IsDigit))
                 {
-                    Console.WriteLine("El nombre no puede contenedor números, por favor ingresa un nombre válido");
+                    Console.WriteLine("El nombre no puede contener números, por favor ingresa un nombre válido");
                     nombreCliente = "";
                 }
                 else
@@ -81,7 +82,19 @@ class Program
         }
 
     }
+    static int mostrarCategoria()
+    {
+        List<String> categorias = new List<string> { "Abarrotes", "Lacteos", "Bebidas", "Snacks" };
+        int categoriaValidar = 0;
 
+        Console.WriteLine("Digíte el número de una de las categorías para acceder a los producto:");
+        foreach (string categoria in categorias)
+        {
+            int numeroCategoria = categorias.IndexOf(categoria) + 1;
+            Console.WriteLine($"{numeroCategoria}. {categoria}");
+        }
+        return categoriaValidar = Int32.Parse(Console.ReadLine());
+    }
     static int mostrarProductos(Dictionary<int, List<string>> Productos, int seleccion)
     {
         int productoValidar = 0;
@@ -89,6 +102,7 @@ class Program
         if (Productos.ContainsKey(seleccion))
         {
             var prod = Productos[seleccion];
+            Console.WriteLine("Digite el número de producto:");
             foreach (var producto in prod)
             {
                 int numeroProducto = prod.IndexOf(producto) + 1;
@@ -103,48 +117,8 @@ class Program
         }
     }
 
-    static int mostrarCategoria()
-    {
-        List<String> categorias = new List<string> { "Abarrotes", "Lacteos", "Bebidas", "Snacks" };
-        int categoriaValidar = 0;
-
-        Console.WriteLine("Digíte el número de una de las categorías para acceder a los producto:");
-        foreach (string categoria in categorias)
-        {
-            int numeroCategoria = categorias.IndexOf(categoria) + 1;
-            Console.WriteLine($"{numeroCategoria}. {categoria}");
-        }
-        return categoriaValidar = Int32.Parse(Console.ReadLine());
-    }
-
-    static void anadirProducto(Dictionary<int, List<string>> Productos, int categoria, int producto, int cantidad, double precio, List<string> pSeleccionado, List<int> pCantidad, List<double> pPrecio)
-    {
-        string nombreArticulo = Productos[categoria][producto - 1];
-
-        pSeleccionado.Add(nombreArticulo);
-        pCantidad.Add(cantidad);
-        pPrecio.Add(precio);
-
-    }
-
     //JEAN 
 
-    static void Calculo() //se realisa el calculo de los productos//
-    {
-        double total = 0;
-        for (int i = 0; i < Cantidad.Count; i++)
-        {
-            Console.WriteLine("---Calculando producto: " + productoSeleccionado[i] + "---");
-            int cantidadActual = Cantidad[i];
-            double precioActual = Precio[i];
-            double subtotal = cantidadActual * precioActual;
-            total += subtotal;
-            Console.WriteLine("Subtotal:" + subtotal);
-        }
-        Console.WriteLine("/==============================");
-        Console.WriteLine("TOTAL A PAGAR:" + total);
-        Console.WriteLine("/==============================");
-    }
     static int LeerEntero(string mensaje)//se solicita que el usuario ingrese un numero entero valido para la cantidad//
     {
         int valor;
@@ -171,12 +145,62 @@ class Program
                 return valor;
             }
 
-            Console.WriteLine("Error:Ingrese un numero validopor favor:");
+            Console.WriteLine("Error:Ingrese un numero valido por favor:");
         }
 
     }
+    static void anadirProducto(Dictionary<int, List<string>> Productos, int categoria, int producto, int cantidad, double precio, List<string> pSeleccionado, List<int> pCantidad, List<double> pPrecio)
+    {
+        string nombreArticulo = Productos[categoria][producto - 1];
+
+        pSeleccionado.Add(nombreArticulo);
+        pCantidad.Add(cantidad);
+        pPrecio.Add(precio);
+
+    }
+    
+    //calculo del precio por producto comporado
+    static double CalculoSubtotal(int cantidad, double precio)
+    {
+        return cantidad*precio;
+
+    }
+    //calculo del precio total a pagar por el cliente
+    static double CalculoTotal() 
+    {
+        double total = 0;
+        for (int i = 0; i < Cantidad.Count; i++)
+        {
+            double subtotal = CalculoSubtotal(Cantidad[i], Precio[i]);
+            total += subtotal;
+        }
+        return total;
+   
+    }
     static void ImpresionResultados()
     {
+       ///Tengo tres listas a ser impresas:
+       /// ProductoSeleccionado, Cantidad y Precios
+       /// Cant.    Descripción   Precio Total
+       /// 2         Cerveza        Cantidad+Precio
+       /// -            -               -
+       /// -            -               -
+       /// 
+       /// TOTAL                       sumaTotal
 
+        double total = CalculoTotal();
+        Console.WriteLine("-------------------------------------------------------------------");
+        Console.WriteLine($"{"Cantidad",-10}{"Descripción",-20}{"Precio Unitario",-20}{"Precio Total"}");
+        Console.WriteLine("-------------------------------------------------------------------");
+        for (int i = 0; i < Cantidad.Count; i++)
+        {
+
+            double subtotal = CalculoSubtotal(Cantidad[i], Precio[i]);
+       
+            Console.WriteLine($"{Cantidad[i],-10}{productoSeleccionado[i],-20}{Precio[i],-20}{subtotal}");
+        }
+        Console.WriteLine("-------------------------------------------------------------------");
+        Console.WriteLine($"{"TOTAL A PAGAR:",-50} {total}");
+       
     }
 }

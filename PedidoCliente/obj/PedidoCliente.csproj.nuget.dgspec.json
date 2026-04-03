@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jean\\Source\\Repos\\Jean-Vasquez\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj": {}
+    "D:\\AUGUSTO\\Ing. sistemas computacionales\\ciclo_III\\Fundamentos_programacion\\semana_1\\Laboratorio_1_grupal\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jean\\Source\\Repos\\Jean-Vasquez\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj": {
+    "D:\\AUGUSTO\\Ing. sistemas computacionales\\ciclo_III\\Fundamentos_programacion\\semana_1\\Laboratorio_1_grupal\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jean\\Source\\Repos\\Jean-Vasquez\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj",
+        "projectUniqueName": "D:\\AUGUSTO\\Ing. sistemas computacionales\\ciclo_III\\Fundamentos_programacion\\semana_1\\Laboratorio_1_grupal\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj",
         "projectName": "PedidoCliente",
-        "projectPath": "C:\\Users\\Jean\\Source\\Repos\\Jean-Vasquez\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj",
-        "packagesPath": "C:\\Users\\Jean\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jean\\Source\\Repos\\Jean-Vasquez\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\obj\\",
+        "projectPath": "D:\\AUGUSTO\\Ing. sistemas computacionales\\ciclo_III\\Fundamentos_programacion\\semana_1\\Laboratorio_1_grupal\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\PedidoCliente.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\AUGUSTO\\Ing. sistemas computacionales\\ciclo_III\\Fundamentos_programacion\\semana_1\\Laboratorio_1_grupal\\GRUPO-04-FUNDAMENTOS-PROGRAMACION\\PedidoCliente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jean\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
