@@ -50,7 +50,7 @@ class Program
                 }
                 else
                 {
-                    nombreValido = true;
+                    nombreValido = true; s
                 }
             }
         }
@@ -66,11 +66,9 @@ class Program
             }
             else
             {
-                Console.Write("Ingrese la cantidad del producto: ");
-                int cantidad = Int32.Parse(Console.ReadLine());
+                int cantidad = LeerEntero("Ingrese la cantidad del producto: ");
+                double precio = LeerDecimal("ingrese el precio del producto: ");
 
-                Console.Write("Ingrese el precio del producto: ");
-                double precio = double.Parse(Console.ReadLine());
 
                 anadirProducto(Productos, seleccionCategoria, seleccionProducto, cantidad, precio, productoSeleccionado, Cantidad, Precio);
                 if (productoSeleccionado.Count == 5)
