@@ -159,7 +159,7 @@ class Program
 
     }
     
-    //calculo del precio por producto comporado
+    //calculo del subtotal por producto comprado
     static double CalculoSubtotal(int cantidad, double precio)
     {
         return cantidad*precio;
@@ -182,7 +182,7 @@ class Program
        ///Tengo tres listas a ser impresas:
        /// ProductoSeleccionado, Cantidad y Precios
        /// Cant.    Descripción   Precio Total
-       /// 2         Cerveza        Cantidad+Precio
+       /// 2         Cerveza        Cantidad*Precio
        /// -            -               -
        /// -            -               -
        /// 
@@ -201,6 +201,5 @@ class Program
         }
         Console.WriteLine("-------------------------------------------------------------------");
         Console.WriteLine($"{"TOTAL A PAGAR:",-50} {total}");
-       
     }
 }
